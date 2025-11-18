@@ -57,3 +57,14 @@ CREATE TABLE medical_records (
     FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
 );
 
+INSERT INTO owners (ownerid, ofirstname, olastname, address, phone, email) VALUES
+(1, 'Maria', 'Santos', '12 Aguinaldo St, Quezon City', '0917-123-4567', 'maria.santos@email.com'),
+(2, 'Jose', 'Dela Cruz', '34 Mabini Ave, Makati', '0918-987-6543', 'jose.dcruz@email.com'),
+(3, 'Sofia', 'Reyes', '56 Katipunan Rd, Cebu City', '0922-555-1212', 'sofia.reyes@email.com'),
+(4, 'Ricardo', 'Garcia', '78 Rizal Blvd, Davao City', '0999-333-8888', 'ricardo.garcia@email.com'),
+(5, 'Luzviminda', 'Mercado', '90 Bonifacio Drive, Manila', '0908-111-2233', 'luzvi.mercado@email.com'),
+(6, 'Antonio', 'Lim', '11 P. Burgos St, Baguio', '0919-444-5566', 'antonio.lim@email.com'),
+(7, 'Elena', 'Perez', '22 Sikatuna Village, Bohol', '0920-777-9900', 'elena.perez@email.com'),
+(8, 'Francisco', 'Lopez', '33 Gen. Luna St, Iloilo', '0925-666-3311', 'francisco.lopez@email.com'),
+(9, 'Carmela', 'Navarro', '44 Magallanes St, Zamboanga', '0916-222-4455', 'carmela.navarro@email.com'),
+(10, 'Rafael', 'Gonzales', '55 Sampaguita St, Pasig', '0915-888-0099', 'rafael.gonzales@email.com');
