@@ -93,7 +93,7 @@ INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
 (109, 2, '2025-11-24', 'Behavior Consultation for Aggression'),
 (110, 4, '2025-11-24', 'Annual Bloodwork and Senior Panel');
 
-INSERT INTO doctors(doctorid, dfirstname, dlastname, speciality, phone, email)
+INSERT INTO doctors(doctorid, dfirstname, dlastname, specialization, phone, email)
 VALUES
 (1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
 (2, 'Dr.Antonio', 'Gonzales', 'Feline Specialist', '555-123-4567', 'antonio@example.com'),
