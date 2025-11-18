@@ -80,3 +80,15 @@ INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color,
 (8, 'Hazel', 'Rabbit', 'Holland Lop', '2024-01-22', 'Female', 'Brown', 8),
 (9, 'Rocky', 'Dog', 'Bulldog', '2022-12-01', 'Male', 'White/Brindle', 9),
 (10, 'Cleo', 'Cat', 'Bengal', '2023-06-18', 'Female', 'Spotted', 10);
+
+INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
+(101, 5, '2025-11-20', 'Annual Vaccination and Check-up'),
+(102, 12, '2025-11-20', 'Spaying/Neutering Procedure'),
+(103, 8, '2025-11-21', 'Persistent Cough and Lethargy'),
+(104, 3, '2025-11-21', 'Dental Cleaning'),
+(105, 15, '2025-11-22', 'Post-Surgery Follow-up'),
+(106, 1, '2025-11-22', 'Flea and Tick Treatment'),
+(107, 7, '2025-11-23', 'Emergency - Broken Leg'),
+(108, 10, '2025-11-23', 'Microchipping'),
+(109, 2, '2025-11-24', 'Behavior Consultation for Aggression'),
+(110, 4, '2025-11-24', 'Annual Bloodwork and Senior Panel');
