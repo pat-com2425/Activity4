@@ -41,8 +41,8 @@ CREATE TABLE doctors (
 CREATE TABLE invoices (
     invoiceid INT PRIMARY KEY,
     appointid INT,
-    amount DECIMAL(10, 2),
-    invoicedate DATE,
+    totalamount DECIMAL(10, 2),
+    paymentdate DATE,
     FOREIGN KEY (appointid) REFERENCES appointments(appointid)
 );  
     
@@ -92,3 +92,16 @@ INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
 (108, 10, '2025-11-23', 'Microchipping'),
 (109, 2, '2025-11-24', 'Behavior Consultation for Aggression'),
 (110, 4, '2025-11-24', 'Annual Bloodwork and Senior Panel');
+
+INSERT INTO invoices(invoiceid, appointid, totalamount, paymentdate)
+VALUES
+(1, 1, 50.00, '09:30:00'),
+(2, 2, 75.00, '14:15:00'),
+(3, 3, 100.00, '11:00:00'),
+(4, 4, 200.00, '13:45:00'),
+(5, 5, 80.00, '10:30:00'),
+(6, 6, 30.00, '15:00:00'),
+(7, 7, 75.00, '09:15:00'),
+(8, 8, 150.00, '16:30:00'),
+(9, 9, 60.00, '14:45:00'),
+(10, 10, 40.00, '11:30:00');
