@@ -75,7 +75,7 @@ INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color,
 (2, 'Buddy', 'Dog', 'Golden Retriever', '2022-05-20', 'Male', 'Gold', 2),
 (3, 'Nemo', 'Fish', 'Clownfish', '2024-03-01', 'Male', 'Orange/White', 3),
 (4, 'Feathers', 'Bird', 'Cockatiel', '2023-11-10', 'Female', 'Gray/Yellow', 4),
-(5, 'Shadow', 'Cat', 'Domestic Shorthair', '2021-09-05', 'Male', 'Black', 5),
+(5, 'Simba', 'Cat', 'Domestic Shorthair', '2021-09-05', 'Male', 'Black', 5),
 (6, 'Lucy', 'Dog', 'Beagle', '2023-07-28', 'Female', 'Tricolor', 6),
 (7, 'Spike', 'Reptile', 'Iguana', '2020-04-12', 'Male', 'Green', 7),
 (8, 'Hazel', 'Rabbit', 'Holland Lop', '2024-01-22', 'Female', 'Brown', 8),
@@ -138,3 +138,6 @@ ADD COLUMN registereddate DATE;
 
 ALTER TABLE invoices
 RENAME COLUMN paymentdate TO paymenttime;
+
+DELETE FROM appointments
+WHERE animalid = 5;
