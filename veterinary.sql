@@ -93,15 +93,15 @@ INSERT INTO appointments (appointid, animalid, appointdate, reason) VALUES
 (109, 2, '2025-11-24', 'Behavior Consultation for Aggression'),
 (110, 4, '2025-11-24', 'Annual Bloodwork and Senior Panel');
 
-INSERT INTO invoices(invoiceid, appointid, totalamount, paymentdate)
+INSERT INTO doctors(doctorid, dfirstname, dlastname, specialization, phone, email)
 VALUES
-(1, 1, 50.00, '09:30:00'),
-(2, 2, 75.00, '14:15:00'),
-(3, 3, 100.00, '11:00:00'),
-(4, 4, 200.00, '13:45:00'),
-(5, 5, 80.00, '10:30:00'),
-(6, 6, 30.00, '15:00:00'),
-(7, 7, 75.00, '09:15:00'),
-(8, 8, 150.00, '16:30:00'),
-(9, 9, 60.00, '14:45:00'),
-(10, 10, 40.00, '11:30:00');
+(1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
+(2, 'Dr.Antonio', 'Gonzales', 'Feline Specialist', '555-123-4567', 'antonio@example.com'),
+(3, 'Dr.Felipe', 'Luna', 'Orthopedic Specialist', '111-222-3333', 'felipe@example.com'),
+(4, 'Dr.Sofia', 'Reyes', 'Dermatology Specialist', '999-888-7777', 'sofia@xample.com'),
+(5, 'Dr.Luis', 'Torres', 'Surgery Specialist', '123-555-7777', 'luis@example.com'),
+(6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com');
+(7, 'Dr.Rafael', 'Cruz', 'Cardiology Specialist', '444-555-6666', 'rafael@example.com'),
+(8, 'Dr.Isabel', 'Vargas', 'Exotic Pet Specialist', '777-666-5555', 'isabel@example.com'),
+(9, 'Dr.Jose', 'Mendoza', 'Internal Medicine', '888-777-6666', 'jose@example.com'),
+(10, 'Dr.Elena', 'Diaz', 'Emergency Medicine', '666-555-4444', 'elena@example.com');
