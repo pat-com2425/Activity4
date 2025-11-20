@@ -165,3 +165,15 @@ JOIN
 WHERE
     O.ofirstname = 'Maria';
     
+SELECT
+    AN.name,
+    COUNT(A.appointid) AS Appointment_Count
+FROM
+    animals AS AN
+JOIN
+    appointments AS A ON AN.animalid = A.animalid
+GROUP BY
+    AN.animalid, AN.name
+ORDER BY
+    Appointment_Count DESC
+LIMIT 1;
